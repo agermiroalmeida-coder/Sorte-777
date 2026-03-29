@@ -1,0 +1,69 @@
+/*** Global Styles ***/
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffcc33, #ff6699);
+    color: #333;
+}
+
+/*** Header ***/
+header {
+    background-color: #0066cc;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: white;
+}
+
+/*** Buttons ***/
+.button {
+    background: #ff6699;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background: #ffcc33;
+}
+
+/*** Responsive Design ***/
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .button {
+        padding: 10px 20px;
+    }
+}
+
+/*** Animations ***/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+/*** Themed Colors ***/
+.primary {
+    color: #0066cc;
+}
+
+.secondary {
+    color: #ffcc33;
+}
